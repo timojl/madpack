@@ -1,0 +1,7 @@
+*.ipynb
+*.pth
+*__pycache__
+.idea
+madpack.egg-info
+.ipynb_checkpoints
+*.html

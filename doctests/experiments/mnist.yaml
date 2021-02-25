@@ -1,0 +1,34 @@
+training_arguments:
+  batch_size: 32
+  optimizer: AdamW
+  lr: 0.001  # 0.0001
+  max_epochs: 80 # 7
+  early_stop: 7
+
+  # retrain: True
+
+  max_iterations: 10
+
+  metrics: [Accuracy]
+  loss: cross_entropy
+
+
+test_arguments:
+  metrics: [Accuracy]
+  batch_size: 16
+  # max-samples: 10000
+  loss: cross_entropy
+  max_iterations: 10
+
+# TODO:
+# cross_validation:
+# model_folders: ['', '']
+always_columns: ['model_type']
+
+configurations:
+
+- [load:F9PR-Gk, MNIST, {}]
+- [RN18Narrow, MNIST, {inp: 1}]
+
+test_datasets:
+- [MNIST, {}]

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>MADpack Documentation</title>
+        <style>
+            body {font-family: sans-serif; padding: 0px; }
+            p { margin-top: 0em; margin-bottom: 1em }
+            .all {display: flex; margin:auto}
+            .toc {background-color:#fff; padding: 20px; width: 14em}
+            .logo {margin:20px;}
+            .logo img{width: 150px; margin:auto}
+            .container {width: 700px; background-color:#fff; padding: 30px; }
+            hr {border: 0px; border-bottom: 1px dotted #ccc; margin-bottom: 50px;}
+            .arg_optional {color: #555; font-weight:normal}
+            .arg {color: #555; font-weight:bold}
+            h5 {margin-bottom: 2px; padding-bottom: 2px; margin-top:5px;}
+            span.description, span.description > pre {margin-top:0px; padding-top:0px; margin-bottom: 20px;}
+            .toc_items {position: fixed;}
+            .toc_items > a { display: block; color: #000; text-decoration:none; }
+            .toc_items > a.depth1 { font-weight: bold; color: #000}
+            .toc_items > a.depth2 { margin-left: 1em; color: #000}
+            .toc_items > a.depth3 { margin-left: 2em; color: #555}
+            .codehilite {padding: 3px; margin:3px;}
+            .codehilite > pre {margin: 3px}
+            .docstr { font-family: monospace; font-size: 12px; margin-bottom: 30px; overflow-y: hidden}
+            a, a:visited { color:#2233ef; text-decoration:none }
+            a.anchor-link {color: #eeeeee}
+            div.promt {font-size: small; }
+            li {margin-top: 0.3em; margin-bottom: 0.3em}
+            div.input_prompt, div.output_prompt {display: none}
+            div.highlight {line-height: 1.4 }
+            <<pygments_css>>
+        </style>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
+        <script src="highlight.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+    <div class="all">
+        <div class="container">
+            <<content>>
+        </div>
+    </div>
+    </body>
+</html>'
